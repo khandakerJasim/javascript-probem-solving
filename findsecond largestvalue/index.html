@@ -1,0 +1,17 @@
+<script>
+  const array = [1, 2, 3, 4, 7, 6, 10, 8, 550, 100];
+
+  const largevaluefunc = (arr) => {
+    const largevalue = Math.max(...arr);
+    const index = arr.indexOf(largevalue);
+    arr.splice(index, 1);
+    const secondlargevalue = Math.max(...arr);
+    const thirdlargevalue = Math.max(...arr);
+    return largevalue;
+    return secondlargevalue;
+    return thirdlargevalue;
+  };
+  console.log("large value is:", largevaluefunc(array));
+  console.log("secondlarge value is:", largevaluefunc(array));
+  console.log("thirdlargenumberis", largevaluefunc(array));
+</script>

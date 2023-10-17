@@ -1,0 +1,16 @@
+<script>
+  const array = [2, 50, 3, 509, 293494, 1];
+
+  const maxnumberfunction = (array) => {
+    return array.reduce((prev, curr) => {
+      return prev > curr ? prev : curr;
+    });
+  };
+  const minfunction = (array) => {
+    return array.reduce((prev, curr) => {
+      return prev < curr ? prev : curr;
+    });
+  };
+  console.log("maximum number is", maxnumberfunction(array));
+  console.log("minimum number is", minfunction(array));
+</script>

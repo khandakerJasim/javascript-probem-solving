@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>find the duplicate array</title>
+  </head>
+  <body>
+    <h1>find the duplicate array</h1>
+    <script>
+      const array = [2, 4, 3, 4, 2, 3, 40];
+
+      const duplicate = array.filter(
+        (elem, index, arr) => arr.indexOf(elem) !== index
+      );
+      console.log(duplicate);
+    </script>
+  </body>
+</html>
